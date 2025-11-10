@@ -5,22 +5,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Construindo o projeto...'
-                // Exemplo: sh 'mvn clean install' ou 'npm install'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Executando testes...'
-                // Exemplo: sh 'npm test' ou 'pytest'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Realizando deploy...'
-                // Exemplo: sh './deploy.sh'
-            }
+                echo 'Realizando deploy...'            }
         }
     }
 
